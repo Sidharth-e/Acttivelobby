@@ -1,0 +1,156 @@
+
+    <!-- MAIN -->
+    <main>
+      <div class="head-title">
+        <div class="left">
+          <h1>Team Dashboard</h1>
+          <ul class="breadcrumb">
+            <li>
+              <a href="#">Dashboard</a>
+            </li>
+            <li><i class='bx bx-chevron-right' ></i></li>
+            <li>
+              <a class="active" href="#">Teams</a>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="btn-download">
+          <i class='bx bxs-cloud-download' ></i>
+          <span class="text">Download PDF</span>
+        </a>
+      </div>
+  
+      <ul class="box-info">
+        <li>
+          <i class='bx bx-football' ></i>
+          <span class="text">
+            <h3>{{nativeplayerdata.length}}</h3>
+            <p>Native Players count</p>
+          </span>
+        </li>
+        <li>
+          <i class='bx bx-football' ></i>
+          <span class="text">
+            <h3>{{nationalplayerdata.length}}</h3>
+            <p>National Players count</p>
+          </span>
+        </li>
+        <li>
+          <i class='bx bx-football' ></i>
+          <span class="text">
+            <h3>{{foreignplayerdata.length}}</h3>
+            <p>Foreign Players count</p>
+          </span>
+        </li>
+      </ul>
+  
+  
+      <div class="table-data">
+        <div class="order">
+          <div class="head">
+            <h3>Native Player Details</h3>
+            <i class='bx bx-search' ></i>
+            <i class='bx bx-filter' ></i>
+          </div>
+          <table class="rwd_table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Country</th>
+                <th>Position</th>
+                <th>Preferred Foot</th>
+                <th>Jersey Number</th>
+                <th>Height</th>
+                <th>Market Value</th>
+                <th>Currency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let datas of nativeplayerdata;">
+                <td data-th="Name">{{datas.player.name}}</td>
+                <td data-th="Country">{{datas.player.country.name}}</td>
+                <td data-th="Position">{{datas.player.position}}</td>
+                <td data-th="Preferred Foot">{{datas.player.preferredFoot}}</td>
+                <td data-th="Jersey Number">{{datas.player.jerseyNumber}}</td>
+                <td data-th="Height">{{datas.player.height}}</td>
+                <td data-th="Market Value">{{datas.player.proposedMarketValueRaw.value}}</td>
+                <td data-th="Currency">{{datas.player.proposedMarketValueRaw.currency}}</td>
+                
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="table-data">
+        <div class="order">
+          <div class="head">
+            <h3>National Players Details</h3>
+            <i class='bx bx-search' ></i>
+            <i class='bx bx-filter' ></i>
+          </div>
+          <table class="rwd_table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Country</th>
+                <th>Position</th>
+                <th>Preferred Foot</th>
+                <th>Jersey Number</th>
+                <th>Height</th>
+                <th>Market Value</th>
+                <th>Currency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let datas of nationalplayerdata;">
+                <td>{{datas.player.name}}</td>
+                <td>{{datas.player.country.name}}</td>
+                <td>{{datas.player.position}}</td>
+                <td data-th="Preferred Foot">{{datas.player.preferredFoot}}</td>
+                <td data-th="Jersey Number">{{datas.player.jerseyNumber}}</td>
+                <td data-th="Height">{{datas.player.height}}</td>
+                <td data-th="Market Value">{{datas.player.proposedMarketValueRaw.value}}</td>
+                <td data-th="Currency">{{datas.player.proposedMarketValueRaw.currency}}</td>
+                
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="table-data">
+        <div class="order">
+          <div class="head">
+            <h3>Foreign Players Details</h3>
+            <i class='bx bx-search' ></i>
+            <i class='bx bx-filter' ></i>
+          </div>
+          <table class="rwd_table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Country</th>
+                <th>Position</th>
+                <th>Preferred Foot</th>
+                <th>Jersey Number</th>
+                <th>Height</th>
+                <th>Market Value</th>
+                <th>Currency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let datas of foreignplayerdata;">
+                <td data-th="Name">{{datas.player.name}}</td>
+                <td data-th="Country">{{datas.player.country.name}}</td>
+                <td data-th="Position">{{datas.player.position}}</td>
+                <td data-th="Preferred Foot">{{datas.player.preferredFoot}}</td>
+                <td data-th="Jersey Number">{{datas.player.jerseyNumber}}</td>
+                <td data-th="Height">{{datas.player.height}}</td>
+                <td data-th="Market Value">{{datas.player.proposedMarketValueRaw.value}}</td>
+                <td data-th="Currency">{{datas.player.proposedMarketValueRaw.currency}}</td>
+                
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>

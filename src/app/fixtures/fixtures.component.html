@@ -1,0 +1,135 @@
+
+    <!-- MAIN -->
+    <main>
+        <div class="head-title">
+          <div class="left">
+            <h1>Fixture Dashboard</h1>
+            <ul class="breadcrumb">
+              <li>
+                <a href="#">Dashboard</a>
+              </li>
+              <li><i class='bx bx-chevron-right' ></i></li>
+              <li>
+                <a class="active" href="#">Fixture</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="btn-download">
+            <i class='bx bxs-cloud-download' ></i>
+            <span class="text">Download PDF</span>
+          </a>
+        </div>
+    
+        <ul class="box-info">
+          <li>
+            <i class='bx bx-football' ></i>
+            <span class="text">
+              <h3>{{matchday17.length}}</h3>
+              <p>Matchday 17</p>
+            </span>
+          </li>
+          <li>
+            <i class='bx bx-football' ></i>
+            <span class="text">
+              <h3>{{matchday18.length}}</h3>
+              <p>Matchday 18</p>
+            </span>
+          </li>
+          <li>
+            <i class='bx bx-football' ></i>
+            <span class="text">
+              <h3>{{matchday19.length}}</h3>
+              <p>Matchday 19</p>
+            </span>
+          </li>
+        </ul>
+    
+    
+        <div class="table-data">
+          <div class="order">
+            <div class="head">
+              <h3>Matchday 17</h3>
+              <i class='bx bx-search' ></i>
+              <i class='bx bx-filter' ></i>
+            </div>
+            <table class="rwd_table">
+              <thead>
+                <tr>
+                  <th>Home log0</th>
+                  <th>Home</th>
+                  <th>Away logo</th>
+                  <th>Away</th>
+                  <th>Match day</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let datas of matchday17;">
+                  <td data-th="Home logo"><img src={{datas.homeLogo}}/></td>
+                  <td data-th="Home Team">{{datas.homeTeam}}</td>
+                  <td data-th="Away logo"><img src={{datas.awayLogo}}/></td>
+                  <td data-th="Away Team">{{datas.awayTeam}}</td>
+                  <td data-th="Match Day">{{datas.MatchDay}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="table-data">
+          <div class="order">
+            <div class="head">
+              <h3>Matchday 18</h3>
+              <i class='bx bx-search' ></i>
+              <i class='bx bx-filter' ></i>
+            </div>
+            <table class="rwd_table">
+              <thead>
+                <tr>
+                  <th>Home logo</th>
+                  <th>Home</th>
+                  <th>Away logo</th>
+                  <th>Away</th>
+                  <th>Match day</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let datas of matchday18;">
+                  <td data-th="Home logo"><img src={{datas.homeLogo}}/></td>
+                  <td data-th="Home Team">{{datas.homeTeam}}</td>
+                  <td data-th="Away logo"><img src={{datas.awayLogo}}/></td>
+                  <td data-th="Away Team">{{datas.awayTeam}}</td>
+                  <td data-th="Match Day">{{datas.MatchDay}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="table-data">
+          <div class="order">
+            <div class="head">
+              <h3>Matchday 19</h3>
+              <i class='bx bx-search' ></i>
+              <i class='bx bx-filter' ></i>
+            </div>
+            <table class="rwd_table">
+              <thead>
+                <tr>
+                  <th>Home log</th>
+                  <th>Home</th>
+                  <th>Away logo</th>
+                  <th>Away</th>
+                  <th>Match day</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let datas of matchday19;">
+                  <td data-th="Home logo"><img src={{datas.homeLogo}}/></td>
+                  <td data-th="Home Team">{{datas.homeTeam}}</td>
+                  <td data-th="Away logo"><img src={{datas.awayLogo}}/></td>
+                  <td data-th="Away Team">{{datas.awayTeam}}</td>
+                  <td data-th="Match Day">{{datas.MatchDay}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>

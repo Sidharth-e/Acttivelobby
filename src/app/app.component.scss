@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+
+
+.card {
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+}
+
+.cover-photo {
+    margin-top: 20px;
+    position: relative;
+    background: url(https://i.imgur.com/jxyuizJ.jpeg);
+    background-size: cover;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.profile_card {
+    position: absolute;
+    width: 120px;
+    bottom: -50px;
+    background-color: gray;
+    left: 15px;
+    border-radius: 60%;
+    padding: 5px;
+}
+
+.profile-name {
+    font-size: 20px;
+    margin: 25px 0 0 120px;
+    color: black;
+}
+
+.btn {
+    margin: 30px 15px;
+    background: --blue;
+    padding: 10px 25px;
+    border-radius: 3px;
+    border: 1px solid #7ce3ff;
+    font-weight: bold;
+    font-family: Montserrat;
+    cursor: pointer;
+    color: #222;
+    transition: 0.2s;
+}
+i{
+    height: 10px;
+}
+
+.btn:hover {
+    background: #7ce3ff;
+    color: #222;
+}
+.inp_update{
+    background: #eee;
+    border: none;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+  .profile_update{
+    margin-top: 20px;
+  }
+
